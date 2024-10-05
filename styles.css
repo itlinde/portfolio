@@ -1,3 +1,125 @@
 body {
+    --background: #213A2C; 
+    --secondary: #4E6C50;
+    --accent: #B1ABD8;
+    --textPrimary: #EDE4D3;
+    --textSecondary: #CABFAB;
+
+    background-color: var(--background);
+    margin: 0px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Averia Serif Libre", serif;
+    font-style: normal;
+    color: var(--textPrimary);
+}
+
+h1 {
+    font-size: 61px;
+    font-weight: 400;
+    margin: 0;
+}
+
+h2 {
+    font-size: 48px;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 39px;
+    font-weight: 400;
+}
+
+h4 {
+    font-size: 31px;
+    font-weight: 300;
+}
+
+h5 {
+    font-size: 25px;
+    font-weight: 300;
+}
+
+h6 {
+    font-size: 20px;
+    font-weight: 300;
+
+}
+
+p {
+    font-family: "Inclusive Sans", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: var(--textSecondary);
+}
+
+li {
+    font-family: "Inclusive Sans", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: var(--textSecondary);
+}
+
+#intro {
+    padding: 200px;
+    margin-top: 50px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 50px;
+}
+
+
+#navbar {
+    position: sticky;
+    top: 0;
+    background-color: var(--background);
+    padding: 15px;
+    margin: auto;
     text-align: center;
+}
+
+.navbar-brand {
+    font-family: "Averia Serif Libre", serif;
+    font-style: normal;
+    font-size: 20px;
+    font-weight: 400px;
+    color: var(--textSecondary);
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px;
+}
+
+#navbar a, a:visited {
+    font-family: "Averia Serif Libre", serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    color: var(--textSecondary);
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px;
+}
+
+#navbar svg {
+    display: inline-block;
+}
+
+#navbar div {
+    display: inline-block;
+}
+
+#socials {
+    text-align: right;
+}
+
+#content {
+    max-width: 1000px;
+    padding: 10px;
+    margin: 0px 150px;
 }
