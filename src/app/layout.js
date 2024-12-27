@@ -1,6 +1,7 @@
 import { Averia_Serif_Libre, Inclusive_Sans, Darumadrop_One } from "next/font/google";
 import "./globals.css";
 import Link from 'next/link';
+import { Analytics } from "@vercel/analytics/react"
 
 const averiaSerifLibre = Averia_Serif_Libre({
   variable: "--font-averia-serif-libre",
