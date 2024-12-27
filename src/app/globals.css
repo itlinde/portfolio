@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #213A2C; 
+  --secondary: #4E6C50;
+  --accent: #B1ABD8;
+  --textPrimary: #EDE4D3;
+  --textSecondary: #CABFAB;
+}
+
+body {
+  background: var(--background);
+  margin: 0px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-darumadrop-one);
+  font-style: normal;
+  color: var(--textPrimary);
+}
+
+h1 {
+  font-size: 3.815rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+h2 {
+  font-size: 3.052rem;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 2.441rem;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 1.953rem;
+  font-weight: 300;
+}
+
+h5 {
+  font-size: 1.563rem;
+  font-weight: 300;
+}
+
+h6 {
+  font-size: 1.25rem;
+  font-weight: 300;
+
+}
+
+p, li, a {
+  font-family: var(--font-inclusive-sans);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  color: var(--textSecondary);
+}
