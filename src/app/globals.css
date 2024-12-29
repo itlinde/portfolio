@@ -2,12 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #213A2C; 
-  --secondary: #4E6C50;
-  --accent: #B1ABD8;
-  --textPrimary: #EDE4D3;
-  --textSecondary: #CABFAB;
+@layer base {
+  :root {
+    --background: #213A2C; 
+    --secondary: #4E6C50;
+    --accent: #B1ABD8;
+    --textPrimary: #EDE4D3;
+    --textSecondary: #CABFAB;
+  }
 }
 
 body {

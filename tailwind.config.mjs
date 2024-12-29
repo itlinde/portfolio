@@ -8,11 +8,22 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        secondary: "var(--secondary)",
-        accent: "var(--accent)",
-        textPrimary: "var(--textPrimary)",
-        textSecondary: "var(--textSecondary)",
+        background: '#2d3a2e',
+        secondary: {
+          '50': '#f5f8f5',
+          '100': '#e9efe9',
+          '200': '#d3dfd3',
+          '300': '#afc6b0',
+          '400': '#84a486',
+          '500': '#628564',
+          DEFAULT: '#4e6c50',
+          '700': '#3f5641',
+          '800': '#354636',
+          '900': '#2d3a2e',
+          '950': '#151e16',
+        },
+        textPrimary: '#EDE4D3',
+        textSecondary: '#CABFAB',
       },
       fontFamily: {
         averia: ['var(--font-averia-serif-libre)', 'Arial', 'serif'],
