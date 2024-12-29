@@ -21,8 +21,7 @@ export default function Page() {
             <p>When I'm not geeking out over my latest project, you'll find me at concerts and jazz cafés, taking walks with my camera, filmmaking with friends, and saving up for my next trip abroad. </p>
         </div>
         <div className="w-80 min-w-screen-sm h-96 relative p-4">
-            <Image src="/images/me2.png" fill={true} className="object-cover rounded-2xl" alt="Picture of Isabella"/>
-            
+            <Image src="/images/me2.png" fill={true} className="object-cover rounded-2xl shadow-md shadow-secondary-500/70 border-2 border-secondary-500 transition ease-in-out duration-500 hover:scale-105 hover:-skew-y-2 hover:shadow-xl hover:shadow-secondary-500/30" alt="Picture of Isabella"/>
         </div>
     </div>
     );
