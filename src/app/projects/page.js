@@ -13,14 +13,14 @@ export default function Page() {
             <ProjectBox imageSrc={"/images/mastery-tracker-mockup.png"}
                         title={"Mastery Tracker"}
                         info={"A tracker to help students monitor understanding of a course's material and focus study time on areas needing improvement."}
-                        date={"05/2024-08/2024"} 
+                        date={"05/2024-08/2024"}
                         link={"https://github.com/itlinde/mastery-tracker-app"} />
             <ProjectBox imageSrc={"/images/pomo-timer-2.png"}
                         title={"PomoTimer"}
                         info={"A simple pomodoro timer that allows users to set intentions and/or goals for each study session."}
-                        date={"05/2024-07/2024"} 
+                        date={"05/2024-07/2024"}
                         link={"https://github.com/itlinde/pomodoro-timer-app"} />
-        </div>  
+        </div>
     </div>
     );
 }
