@@ -7,7 +7,7 @@ export default function Page() {
             <h2>about me</h2>
             <p>Hi! I'm Isabella, a front-end enthusiast and enjoyer of really good design.</p>
             <br/>
-            <p>I love front-end development because it combines my passion for design and software development into one. My goal is to one day work at one of the world's leading design firms, where I'll be able to contribute to products that impact millions worldwide.</p>
+            <p>I love front-end development because it combines my passion for design and software development into one. My goal is to one day work at one of the world's leading design firms, where I'll be able to contribute to products that impact millions worldwide!</p>
             <br/>
             <p>Recently, I've enjoyed working with: </p>
             <ul className="list-disc list-inside">
