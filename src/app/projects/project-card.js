@@ -1,0 +1,27 @@
+import Image from 'next/image';
+import Link from 'next/link';
+
+export default function ProjectCard({ imageSrc, title, info, date, link }) {
+    return (
+        <div className="group grid grid-col-1 h-96 w-80 p-6 content-between m-4 rounded-2xl bg-secondary/15 hover:bg-secondary-500/40 shadow-xl shadow-secondary-950/10 transition ease-in-out duration-300 hover:-translate-y-1 outline outline-0 hover:outline-2 outline-secondary-500/60">
+                <div>
+                    <div className="block h-36 w-full relative rounded-md overflow-hidden">
+                        <Image src={imageSrc} fill={true} className="object-cover rounded-md group-hover:scale-125 transition ease-in-out duration-500 " alt="image of project 1"/>
+                    </div>
+                    <h5 className="block py-2">{title}</h5>
+                    <p>{info}</p>
+                </div>
+                <div className="flex w-full justify-between">
+                    <p className="text-secondary-500">{date}</p>
+                    <a href={link} target="_blank">
+                        <button className="px-2 text-secondary hover:text-secondary-400 transition ease-in-out duration-300 hover:scale-125">
+                            <span className="sr-only">GitHub</span>
+                                <svg className="w-6 h-6" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="currentColor" d="M12.393 0.0475991C9.38463 0.0170289 6.4872 1.18215 4.33749 3.28691C2.18779 5.39167 0.961707 8.26383 0.928711 11.2722C0.940303 13.6496 1.7051 15.9622 3.11324 17.8778C4.52139 19.7934 6.50043 21.2135 8.76611 21.934C9.33933 22.0382 9.54777 21.6943 9.54777 21.392C9.54777 21.0898 9.54777 20.4228 9.54777 19.4848C6.35861 20.1622 5.68118 17.984 5.68118 17.984C5.46888 17.3002 5.01753 16.7157 4.40969 16.3373C3.36748 15.6494 4.49306 15.6599 4.49306 15.6599C4.8533 15.708 5.19796 15.8371 5.5012 16.0375C5.80443 16.2378 6.05837 16.5042 6.24397 16.8167C6.5674 17.3776 7.0981 17.789 7.72183 17.9625C8.34557 18.1359 9.01248 18.0576 9.57904 17.7443C9.6373 17.1736 9.89575 16.6419 10.3086 16.2435C7.76559 15.9621 5.09754 15.0033 5.09754 10.699C5.0748 9.57617 5.48967 8.48856 6.25439 7.66614C5.90612 6.70217 5.94724 5.64041 6.36904 4.70627C6.36904 4.70627 7.33829 4.40403 9.49566 5.8527C11.3736 5.35227 13.3499 5.35227 15.2278 5.8527C17.4164 4.40403 18.3544 4.70627 18.3544 4.70627C18.7762 5.64041 18.8173 6.70217 18.4691 7.66614C19.2516 8.47348 19.6889 9.5538 19.6885 10.6781C19.6885 14.9929 16.9996 15.9413 14.4774 16.2227C14.7536 16.4908 14.9669 16.8168 15.1021 17.1772C15.2372 17.5376 15.2908 17.9235 15.2591 18.3071V21.3816C15.2591 21.3816 15.4675 22.0382 16.0407 21.9235C18.3 21.1986 20.2724 19.7782 21.6761 17.8653C23.0799 15.9524 23.8433 13.6449 23.8573 11.2722C23.8243 8.26383 22.5982 5.39167 20.4485 3.28691C18.2988 1.18215 15.4014 0.0170289 12.393 0.0475991Z"/>
+                                </svg>
+                        </button>
+                    </a>
+                </div>
+            </div>
+    );
+}
