@@ -1,14 +1,17 @@
+const flowbite = require("flowbite-react/tailwind");
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    flowbite.content(),
   ],
   theme: {
     extend: {
       colors: {
-        background: '#2d3a2e',
+        background: '#213A2C',
         secondary: {
           '50': '#f5f8f5',
           '100': '#e9efe9',
@@ -29,7 +32,15 @@ export default {
         averia: ['var(--font-averia-serif-libre)', 'Arial', 'serif'],
         darumadrop: ['var(--font-darumadrop-one)', 'Arial', 'serif'],
       },
+      aspectRatio: {
+        '3/2': '3 / 2',
+        '2/3': '2 / 3',
+        '4/3': '4 / 3',
+        '4/5': '4 / 5',
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    flowbite.plugin(),
+  ],
 };

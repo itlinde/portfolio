@@ -1,4 +1,4 @@
-import ProjectBox from './project-box.js'
+import ProjectBox from './project-card.js'
 
 export default function Page() {
     return (
