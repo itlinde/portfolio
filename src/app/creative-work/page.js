@@ -18,7 +18,7 @@ export default function Page() {
             </section>
             <section id="photography" className="py-6">
                 <h4>photography</h4>
-                <p className="pb-5">Some of my favourite photos I've taken:</p>
+                <p className="pb-5">I'm unhealthily attached to my camera. Here are some of my favourite photos I've taken :)</p>
                 <div id="masonry-gallery" className="columns-2 md:columns-3 gap-8 space-y-8">
                     <Image src="/images/photo-gallery/ph-sunset.jpeg" className="aspect-2/3 object-cover rounded-lg" width={500} height={500} alt="..."/>
                     <Image src="/images/photo-gallery/granville-geese.jpeg" className="aspect-2/3 object-cover rounded-lg" width={500} height={500} alt="..."/>

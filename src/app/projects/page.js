@@ -1,5 +1,7 @@
 import ProjectBox from './project-card.js'
 
+// ***** TO DO: add tech stack to each project  ***** 
+
 export default function Page() {
     return (
     <div className="flex flex-col px-7 max-w-screen-xl mx-auto justify-center">
