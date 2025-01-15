@@ -2,12 +2,13 @@ import Image from "next/image";
 
 export default function Page() {
     return (
-    <div className="flex flex-wrap-reverse max-w-screen-xl mx-auto w-full items-center p-7 justify-center md:space-x-14">
+    <div className="flex flex-wrap-reverse max-w-screen-xl mx-auto w-full items-center p-7 justify-center md:space-x-14 mb-20">
         <div className="max-w-md p-4">
             <h2>about me</h2>
             <p>Hi! I'm Isabella, a front-end enthusiast and enjoyer of really good design. ⭐️</p>
             <br/>
-            <p>I love front-end development because it combines my passion for design and software development into one! My goal is to one day work at one of the world's leading digital product design firms, where I'll be able to contribute to products that impact millions worldwide.</p>
+            <p>I love front-end development because it combines my passion for design and software development into one! My goal is to one day work at a leading digital product design firm, where I'll be able to contribute to products that leave a lasting impact.</p>
+            {/* <p>I love front-end development because it combines my passion for design and software development into one! My goal is to one day work at one of the world's leading digital product design firms, where I'll be able to contribute to products that impact millions worldwide.</p> */}
             <br/>
             <p>Recently, I've enjoyed working with: </p>
             <ul className="list-disc list-inside">

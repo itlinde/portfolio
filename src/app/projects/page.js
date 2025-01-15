@@ -1,10 +1,11 @@
 import ProjectBox from './project-card.js'
+import Image from 'next/image'
 
 // ***** TO DO: add tech stack to each project  ***** 
 
 export default function Page() {
     return (
-    <div className="flex flex-col px-7 max-w-screen-xl mx-auto justify-center">
+    <div className="flex flex-col px-7 max-w-screen-xl mx-auto justify-center mb-36">
         <h2 className="block py-7 place-self-center">personal projects</h2>
         <div className="flex flex-wrap justify-center">
             <ProjectBox imageSrc={"/images/capcap.png"}
