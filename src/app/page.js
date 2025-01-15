@@ -10,8 +10,8 @@ export default function Home() {
         </div>
 
         <div className="group">
-          <Image src="/images/smile3.png" width={200} height={200} className="group-hover:hidden" alt="face"></Image>
-          <Image src="/images/smile1.png" width={200} height={200} className="hidden group-hover:block" alt="face"></Image>
+          <Image src="/images/smile1.png" width={200} height={200} className="group-hover:hidden" alt="face"></Image>
+          <Image src="/images/smile3.png" width={200} height={200} className="hidden group-hover:block" alt="face"></Image>
         </div>
       </div>
     </div>

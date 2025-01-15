@@ -29,13 +29,13 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth scroll-pt-20">
       <body
         className={`${averiaSerifLibre.variable} ${inclusiveSans.variable} ${darumadropOne.variable} antialiased`}
       >
 
         {/* Navbar */}
-        <nav id="navbar" className="sticky top-0 bg-background max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4 py-5">
+        <nav id="navbar" className="z-10 sticky top-0 bg-background max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4 py-5">
           {/* Right menu */}
           <div className="flex items-center">
             {/* STILL NOT WORKING: drop down menu doesn't open on small screens */}
@@ -44,7 +44,7 @@ export default function RootLayout({ children }) {
                 <ul className="font-base flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
                   <li><Link href="/about"       className="font-averia px-3 hover:text-secondary transition ease-in-out duration-100 block py-2 text-textSecondary rounded md:bg-transparent md:p-0">About</Link></li>
                   <li><Link href="/projects"    className="font-averia px-3 hover:text-secondary transition ease-in-out duration-100 block py-2 text-textSecondary rounded md:bg-transparent md:p-0">Projects</Link></li>
-                  <li><Link href="/creative-work" className="font-averia px-3 hover:text-secondary transition ease-in-out duration-100 block py-2 text-textSecondary rounded md:bg-transparent md:p-0">Films & Photography</Link></li>
+                  <li><Link href="/creative-work" className="font-averia px-3 hover:text-secondary transition ease-in-out duration-100 block py-2 text-textSecondary rounded md:bg-transparent md:p-0">Creative Works</Link></li>
                 </ul>
             </div>
           </div>
@@ -60,7 +60,7 @@ export default function RootLayout({ children }) {
                 </svg>
               </button>
             </a>
-            <a href="www.linkedin.com/in/isabellalinde" target="_blank">
+            <a href="https://www.linkedin.com/in/isabellalinde/" target="_blank">
               <button className="px-2 text-secondary hover:text-textSecondary transition ease-in-out duration-100">
                 <span className="sr-only">LinkedIn</span>
                   <svg className="inline w-6 h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -79,7 +79,7 @@ export default function RootLayout({ children }) {
 
             {/* hamburger menu (hidden on md screens & up) */}
             <Menu>
-              <MenuButton className="px-3 items-center text-textSecondary md:hidden hover:text-secondary transition ease-in-out duration-100">
+              <MenuButton className="px-3 items-center text-textSecondary md:hidden hover:text-secondary transition ease-in-out duration-100 focus:ring-0">
                 <svg className="inline w-6 h-6" viewBox="0 0 29 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill="currentColor" d="M27.3792 10.0833H2.33471C1.51856 10.0833 0.856934 10.8986 0.856934 11.9042V12.0958C0.856934 13.1015 1.51856 13.9167 2.33471 13.9167H27.3792C28.1953 13.9167 28.8569 13.1015 28.8569 12.0958V11.9042C28.8569 10.8986 28.1953 10.0833 27.3792 10.0833Z"/>
                   <path fill="currentColor" d="M27.3792 19.6667H2.33471C1.51856 19.6667 0.856934 20.4819 0.856934 21.4875V21.6792C0.856934 22.6848 1.51856 23.5 2.33471 23.5H27.3792C28.1953 23.5 28.8569 22.6848 28.8569 21.6792V21.4875C28.8569 20.4819 28.1953 19.6667 27.3792 19.6667Z"/>
@@ -99,7 +99,7 @@ export default function RootLayout({ children }) {
                 </MenuItem>
                 <MenuItem>
                   <a className="font-averia block data-[focus]:bg-secondary/80 data-[focus]:text-textPrimary py-2 px-4 transition ease-in-out duration-200" href="/creative-work">
-                    Films & Photography
+                    Creative Works
                   </a>
                 </MenuItem>
               </MenuItems>
@@ -107,8 +107,12 @@ export default function RootLayout({ children }) {
           </div>
         </nav>
 
-
         {children}
+
+        {/* <div className="my-16 flex flex-col justify-center opacity-50">
+          <p className="place-self-center">Designed & developed by Isabella Linde (2025).</p>
+          <p className="place-self-center">© Isabella Linde 2025.</p> 
+        </div> */}
 
       </body>
     </html>
