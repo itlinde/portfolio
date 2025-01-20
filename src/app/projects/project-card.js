@@ -1,19 +1,23 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-export default function ProjectCard({ imageSrc, title, info, date, link }) {
+export default function ProjectCard({ imageSrc, title, techStack, info, date, githubLink, projectLink }) {
     return (
-        <div className="group grid grid-col-1 h-96 w-80 p-6 content-between m-4 rounded-2xl bg-secondary/15 hover:bg-secondary-500/40 shadow-xl shadow-secondary-950/10 transition ease-in-out duration-300 hover:-translate-y-1 outline outline-0 hover:outline-2 outline-secondary-500/60">
+        <div className="group grid grid-col-1 h-[26rem] w-80 p-6 content-between m-4 rounded-2xl bg-secondary/15 hover:bg-secondary-500/40 shadow-xl shadow-secondary-950/10 transition ease-in-out duration-300 hover:-translate-y-1 outline outline-0 hover:outline-2 outline-secondary-500/60">
                 <div>
                     <div className="block h-36 w-full relative rounded-md overflow-hidden">
                         <Image src={imageSrc} fill={true} className="object-cover rounded-md group-hover:scale-125 transition ease-in-out duration-500 " alt="image of project 1"/>
                     </div>
-                    <h5 className="block py-2">{title}</h5>
+                    <a href={projectLink} target="_blank" className="flex items-center gap-2 group/title">
+                        <h5 className="block pt-2 group-hover/title:underline transition ease-in-out duration-200">{title}</h5>
+                        <h5 className="block pt-2 text-base">↗</h5>
+                    </a>        
+                    <p className="text-secondary-500 pb-2">{techStack}</p>
                     <p>{info}</p>
                 </div>
                 <div className="flex w-full justify-between">
                     <p className="text-secondary-500">{date}</p>
-                    <a href={link} target="_blank">
+                    <a href={githubLink} target="_blank">
                         <button className="px-2 text-secondary hover:text-secondary-400 transition ease-in-out duration-300 hover:scale-125">
                             <span className="sr-only">GitHub</span>
                                 <svg className="w-6 h-6" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
