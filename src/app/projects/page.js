@@ -4,10 +4,10 @@ import Image from 'next/image'
 export default function Page() {
     return (
     <div className="flex flex-col px-7 max-w-screen-xl mx-auto justify-center mb-36">
-        <h2 className="block py-7 place-self-center">personal projects</h2>
+        <h2 className="block py-7 place-self-center leading-10 text-center">personal projects</h2>
         <div className="flex flex-wrap justify-center">
             <ProjectBox imageSrc={"/images/lewsworkshop3.jpg"}
-                        title={"lewswork.shop"}
+                        title={"Lew's Workshop"}
                         techStack={"React / Next.js / MongoDB / Tailwind CSS / Figma"}
                         info={"Make your own jewelry! A site where you can create custom beaded jewelry and get it made."}
                         date={"01/2025 - Present"}

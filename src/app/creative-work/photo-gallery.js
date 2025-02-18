@@ -6,12 +6,19 @@ import { useState } from "react";
 export default function Gallery() {
     const {imagePreview, setImagePreview} = useState;
 
+    // expands the image to fill up the screen and blurs/dims the background
+    const enlargeImage = () => {
+        
+    };
+
     // create function that expands the image, filling up screen and blurring/dimming background
     // add event listener to click on an image
     // pass image name to useState (in the function do a /images/photo-gallery/{image-name.jpeg})
 
     return (
         <div id="masonry-gallery" className="columns-2 md:columns-3 gap-8 space-y-8">
+            {/* <p>CLICK HERE TO TEST</p> */}
+
             <Image src="/images/photo-gallery/ph-sunset.jpeg" className="aspect-2/3 object-cover rounded-lg bg-secondary/15" width={500} height={500} alt="..."/>
             <Image src="/images/photo-gallery/granville-geese.jpeg" className="aspect-2/3 object-cover rounded-lg bg-secondary/15" width={500} height={500} alt="..."/>
             <Image src="/images/photo-gallery/lanterns.jpeg" className="aspect-square object-cover rounded-lg bg-secondary/15" width={500} height={500} alt="..."/>

@@ -3,23 +3,23 @@ import Link from 'next/link';
 
 export default function ProjectCard({ imageSrc, title, techStack, info, date, githubLink, projectLink }) {
     return (
-        <div className="group grid grid-col-1 h-[26rem] w-80 p-6 content-between m-4 rounded-2xl bg-secondary/15 hover:bg-secondary-500/40 shadow-xl shadow-secondary-950/10 transition ease-in-out duration-300 hover:-translate-y-1 outline outline-0 hover:outline-2 outline-secondary-500/60">
+        <div className="group grid grid-col-1 sm:h-[26rem] w-80 p-6 content-between m-4 rounded-2xl bg-secondary/15 hover:bg-secondary-500/40 shadow-xl shadow-secondary-950/10 transition ease-in-out duration-300 hover:-translate-y-1 outline outline-0 hover:outline-2 outline-secondary-500/60">
                 <div>
                     <div className="block h-36 w-full relative rounded-md overflow-hidden ">
                         <Image src={imageSrc} fill={true} className="object-cover rounded-md group-hover:scale-125 transition ease-in-out duration-500 " alt="image of project 1"/>
                     </div>
                     { projectLink ? 
-                    <a href={projectLink} target="_blank" className="flex items-center gap-2 group/title">
-                        <h5 className="block pt-2 group-hover/title:underline transition ease-in-out">{title}</h5>
+                    <a href={projectLink} target="_blank" className="justify-center flex items-center gap-2 group/title">
+                        <h5 className="text-center block py-3 leading-7 group-hover/title:underline transition ease-in-out">{title}</h5>
                         <h5 className="mt-3 text-base font-sans opacity-75 transition-transform ease-in-out scale-0 group-hover:scale-125 block">↗</h5>
                     </a>  
                     :
-                    <h5 className="block pt-2 group-hover/title:underline transition ease-in-out">{title}</h5>
+                    <h5 className="text-center block py-3 leading-7 group-hover/title:underline transition ease-in-out">{title}</h5>
                     }    
-                    <p className="text-secondary-500 pb-2">{techStack}</p>
+                    <p className="text-secondary-500 pb-2 text-center">{techStack}</p>
                     <p>{info}</p>
                 </div>
-                <div className="flex w-full justify-between">
+                <div className="flex w-full justify-between mt-5 sm:m-0">
                     <p className="text-secondary-500">{date}</p>
                     <a href={githubLink} target="_blank">
                         <button className="px-2 text-secondary hover:text-textSecondary transition duration-300 hover:scale-125">

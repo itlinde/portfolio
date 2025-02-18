@@ -4,8 +4,8 @@ export default function Home() {
   return (
     <div className="flex justify-center">
       <div id="content" className="max-w-screen-lg flex flex-wrap p-7 w-screen h-[85dvh] items-center justify-evenly">
-        <div className="">
-          <h2 className="block font-averia text-3xl text-textSecondary justify-start">Hey, it's</h2>
+        <div className="-space-y-2">
+          <h2 className="block leading-none font-averia text-3xl text-textSecondary justify-start">Hey, it's</h2>
           <h1 className="block leading-none justify-start">Isabella :)</h1>
         </div>
 
