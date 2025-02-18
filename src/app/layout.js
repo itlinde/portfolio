@@ -79,26 +79,26 @@ export default function RootLayout({ children }) {
 
             {/* hamburger menu (hidden on md screens & up) */}
             <Menu>
-              <MenuButton className="px-3 items-center text-textSecondary md:hidden hover:text-secondary transition ease-in-out duration-100 focus:ring-0">
+              <MenuButton className="px-3 items-center text-textSecondary md:hidden hover:text-secondary active:text-textPrimary transition ease-in-out duration-100 focus:ring-0">
                 <svg className="inline w-6 h-6" viewBox="0 0 29 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill="currentColor" d="M27.3792 10.0833H2.33471C1.51856 10.0833 0.856934 10.8986 0.856934 11.9042V12.0958C0.856934 13.1015 1.51856 13.9167 2.33471 13.9167H27.3792C28.1953 13.9167 28.8569 13.1015 28.8569 12.0958V11.9042C28.8569 10.8986 28.1953 10.0833 27.3792 10.0833Z"/>
                   <path fill="currentColor" d="M27.3792 19.6667H2.33471C1.51856 19.6667 0.856934 20.4819 0.856934 21.4875V21.6792C0.856934 22.6848 1.51856 23.5 2.33471 23.5H27.3792C28.1953 23.5 28.8569 22.6848 28.8569 21.6792V21.4875C28.8569 20.4819 28.1953 19.6667 27.3792 19.6667Z"/>
                   <path fill="currentColor" d="M27.3792 0.5H2.33471C1.51856 0.5 0.856934 1.31521 0.856934 2.32083V2.5125C0.856934 3.51812 1.51856 4.33333 2.33471 4.33333H27.3792C28.1953 4.33333 28.8569 3.51812 28.8569 2.5125V2.32083C28.8569 1.31521 28.1953 0.5 27.3792 0.5Z"/>
               </svg>
               </MenuButton>
-              <MenuItems anchor="bottom end" transition className="w-52 bg-secondary/40 backdrop-blur-md border-2 border-secondary/50 rounded-xl rounded-tr-none [--anchor-gap:7px] [--anchor-offset:-11px] transition duration-200 ease-out data-[closed]:scale-95 data-[closed]:opacity-0">
+              <MenuItems anchor="bottom end" transition className="z-20 w-52 bg-secondary/75 backdrop-blur-md border-2 border-secondary/50 rounded-xl rounded-tr-none [--anchor-gap:10px] [--anchor-offset:-11px] transition duration-200 ease-out data-[closed]:scale-95 data-[closed]:opacity-0">
                 <MenuItem>
-                  <a className="font-averia block data-[focus]:bg-secondary/80 data-[focus]:text-textPrimary py-2 px-4 transition ease-in-out duration-200" href="/about">
+                  <a className="font-averia block data-[focus]:bg-secondary-400/60 data-[focus]:text-textPrimary py-2 px-4 transition ease-in-out duration-200" href="/about">
                     About
                   </a>
                 </MenuItem>
                 <MenuItem>
-                  <a className="font-averia block data-[focus]:bg-secondary/80 data-[focus]:text-textPrimary py-2 px-4 transition ease-in-out duration-200" href="/projects">
+                  <a className="font-averia block data-[focus]:bg-secondary-400/60 data-[focus]:text-textPrimary py-2 px-4 transition ease-in-out duration-200" href="/projects">
                     Projects
                   </a>
                 </MenuItem>
                 <MenuItem>
-                  <a className="font-averia block data-[focus]:bg-secondary/80 data-[focus]:text-textPrimary py-2 px-4 transition ease-in-out duration-200" href="/creative-work">
+                  <a className="font-averia block data-[focus]:bg-secondary-400/60 data-[focus]:text-textPrimary py-2 px-4 transition ease-in-out duration-200" href="/creative-work">
                     Creative Works
                   </a>
                 </MenuItem>

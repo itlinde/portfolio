@@ -10,7 +10,7 @@ export default function Page() {
                         title={"lewswork.shop"}
                         techStack={"React / Next.js / MongoDB / Tailwind CSS / Figma"}
                         info={"Make your own jewelry! A site where you can create custom beaded jewelry and get it made."}
-                        date={"01/2025"}
+                        date={"01/2025 - Present"}
                         githubLink={"https://github.com/itlinde/lewsworkshop"}
                         projectLink={"https://www.lewswork.shop/"} />
             <ProjectBox imageSrc={"/images/capcap.png"}
@@ -24,14 +24,14 @@ export default function Page() {
                         title={"Mastery Tracker"}
                         techStack={"Swift / SwiftUI / SwiftData / Figma"}
                         info={"A tracker to help students monitor understanding of a course's material and focus study time on areas needing improvement."}
-                        date={"05/2024-08/2024"}
+                        date={"05/2024 - 08/2024"}
                         githubLink={"https://github.com/itlinde/mastery-tracker-app"} 
                         projectLink={""} />
             <ProjectBox imageSrc={"/images/pomo-timer-2.png"}
                         title={"PomoTimer"}
                         techStack={"Swift / SwiftUI / Figma"}
                         info={"A simple pomodoro timer that allows users to set intentions and/or goals for each study session."}
-                        date={"05/2024-07/2024"}
+                        date={"05/2024 - 07/2024"}
                         githubLink={"https://github.com/itlinde/pomodoro-timer-app"} 
                         projectLink={""} />
         </div>

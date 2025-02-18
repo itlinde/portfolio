@@ -7,7 +7,7 @@ import Header from "./header";
 
 export default function Page() {
     return (
-        <div className="flex flex-col px-7 mb-14 max-w-screen-lg mx-auto justify-center space-y-8">      
+        <div className="flex flex-col px-7 mb-14 max-w-screen-lg mx-auto justify-center space-y-16">      
             <Header />
 
             <section id="drawings-paintings" className="">
@@ -36,10 +36,10 @@ export default function Page() {
                             description={"Annual summer trip with my high school friends!"}
                             videoLink={"https://www.youtube.com/embed/8NAELVM96gI?si=pB1N9DHJ5KU_fi36"}
                     />
-                    <FilmCard title={"Saviour Complex"}
+                    {/* <FilmCard title={"Saviour Complex"}
                             description={"A music video project to Saviour Complex by Pheobe Bridgers."}
                             videoLink={"https://www.youtube.com/embed/sr1LzMzJdgo?si=16QcjdVn7QJBeyy1"}
-                    />
+                    /> */}
                     {/* <Carousel/>  */}
                 </div>
             </section>

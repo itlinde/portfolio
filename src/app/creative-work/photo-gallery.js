@@ -1,6 +1,15 @@
+"use client"
+
 import Image from "next/image";
+import { useState } from "react";
 
 export default function Gallery() {
+    const {imagePreview, setImagePreview} = useState;
+
+    // create function that expands the image, filling up screen and blurring/dimming background
+    // add event listener to click on an image
+    // pass image name to useState (in the function do a /images/photo-gallery/{image-name.jpeg})
+
     return (
         <div id="masonry-gallery" className="columns-2 md:columns-3 gap-8 space-y-8">
             <Image src="/images/photo-gallery/ph-sunset.jpeg" className="aspect-2/3 object-cover rounded-lg bg-secondary/15" width={500} height={500} alt="..."/>
