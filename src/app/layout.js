@@ -44,7 +44,7 @@ export default function RootLayout({ children }) {
                 <ul className="font-base flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
                   <li><Link href="/about"       className="font-averia px-3 hover:text-secondary transition ease-in-out duration-100 block py-2 text-textSecondary rounded md:bg-transparent md:p-0">About</Link></li>
                   <li><Link href="/projects"    className="font-averia px-3 hover:text-secondary transition ease-in-out duration-100 block py-2 text-textSecondary rounded md:bg-transparent md:p-0">Projects</Link></li>
-                  <li><Link href="/creative-work" className="font-averia px-3 hover:text-secondary transition ease-in-out duration-100 block py-2 text-textSecondary rounded md:bg-transparent md:p-0">Creative Works</Link></li>
+                  <li><Link href="/creative-work" className="font-averia px-3 hover:text-secondary transition ease-in-out duration-100 block py-2 text-textSecondary rounded md:bg-transparent md:p-0">Creative Corner</Link></li>
                 </ul>
             </div>
           </div>
@@ -101,7 +101,7 @@ export default function RootLayout({ children }) {
                 </MenuItem>
                 <MenuItem>
                   <a className="font-averia block data-[focus]:bg-secondary-400/60 data-[focus]:text-textPrimary py-2 px-4 transition ease-in-out duration-200" href="/creative-work">
-                    Creative Works
+                    Creative Corner
                   </a>
                 </MenuItem>
               </MenuItems>

@@ -35,6 +35,16 @@ export default {
         '4/3': '4 / 3',
         '4/5': '4 / 5',
       },
+      animation: {
+        'breathe': 'breathe 4s ease-in-out infinite',
+      },
+      keyframes: {
+        breathe: {
+          '0%': { transform: 'scale(1.1)' },
+          '50%': { transform: 'scale(0.9)' },
+          '100%': { transform: 'scale(1.1)' },
+        }
+      }
     },
   },
   plugins: [],

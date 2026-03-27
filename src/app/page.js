@@ -9,9 +9,9 @@ export default function Home() {
           <h1 className="block leading-none justify-start">Isabella :)</h1>
         </div>
 
-        <div className="group">
+        <div className="group animate-breathe hover:animate-none ">
           <Image src="/images/smile1.png" width={200} height={200} className="group-hover:hidden" alt="face"></Image>
-          <Image src="/images/smile3.png" width={200} height={200} className="hidden group-hover:block" alt="face"></Image>
+          <Image src="/images/smile3.png" width={200} height={200} className="hidden group-hover:block scale-110" alt="face"></Image>
         </div>
       </div>
     </div>
