@@ -33,13 +33,13 @@ export default function Page() {
                 </div>
                 <div id="carousel" className="space-y-8">
                     <FilmCard title={"Bowen 2024"}
-                            description={"Annual summer trip with my high school friends!"}
+                            description={"Annual summer trip!"}
                             videoLink={"https://www.youtube.com/embed/8NAELVM96gI?si=pB1N9DHJ5KU_fi36"}
                     />
-                    {/* <FilmCard title={"Saviour Complex"}
-                            description={"A music video project to Saviour Complex by Pheobe Bridgers."}
+                    <FilmCard title={"Saviour Complex"}
+                            description={"Saviour Complex by Pheobe Bridgers, in my eyes."}
                             videoLink={"https://www.youtube.com/embed/sr1LzMzJdgo?si=16QcjdVn7QJBeyy1"}
-                    /> */}
+                    />
                     {/* <Carousel/>  */}
                 </div>
             </section>

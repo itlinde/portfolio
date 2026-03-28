@@ -5,7 +5,7 @@ export default function FilmCard({ title, description, videoLink }) {
                 <iframe fill="true" className="w-full aspect-video object-cover rounded-xl" src={videoLink} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen/>
             </div>
             <div className="shrink-0 h-fit sm:pl-7 sm:pt-0 sm:w-48 w-full pt-3">
-                <h5 className="block">{title}</h5>
+                <h5 className="block ">{title}</h5>
                 <p className="block">{description}</p>
             </div>
         </div>
